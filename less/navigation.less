@@ -1,1 +1,52 @@
 // Navigation Styles here
+
+@media @mobile {
+    .destination {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        border: solid red 1px;
+    }
+}
+
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 10px;
+
+    nav {
+        display: flex;
+        justify-content: baseline;
+    }
+
+    .h {
+        text-decoration: none;
+        font-size: 15px;
+        margin: 10px;
+        color: @font-color;
+    }
+}
+
+.btn {
+
+    display: flex;
+
+    a {
+        text-decoration: none;
+        border: solid @button-bg;
+        border-radius: 10px;
+        padding: 10px 60px;
+        font-size: 15px;
+        color: white;
+        background-color: @button-bg;
+    }
+
+    a:hover {
+        background-color: #ffd59a;
+        color: @button-bg;
+        border: solid #ffd59a;
+    }
+
+}
